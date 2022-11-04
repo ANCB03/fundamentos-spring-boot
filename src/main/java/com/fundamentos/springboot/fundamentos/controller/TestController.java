@@ -1,0 +1,18 @@
+package com.fundamentos.springboot.fundamentos.controller;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.swing.text.html.parser.Entity;
+
+@Controller
+public class TestController {
+    @RequestMapping
+    @ResponseBody
+    public ResponseEntity<String> funtion(){
+        return new ResponseEntity<>("Hello from controller", HttpStatus.OK);
+    }
+}
